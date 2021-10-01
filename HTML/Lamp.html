@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Lamp" content="Lamp Animation">
+        <title>Lamp Animation</title>
+        <link rel="stylesheet" href="../stylesheet/Lamp.css"> 
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="../assets/menu.png" class="menu-img">
+                <img src="../assets/logo.png" class="logo">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">List</a></li>
+                    <li><a href="">Link</a></li>
+                    <li>|</li>
+                    <li>Switch</li>
+                </ul>
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+            <div class="lamp-container">
+                <img src="../assets/アセット 10.png" class="light" id="light"/>
+                <img src="../assets/アセット 12.png" class="lamp-off" id="lampOff"/>
+                <img src="../assets/アセット 11.png" class="lamp-on" id="lampOn"/>
+            </div>
+        </div>
+        <script>
+            var btn = document.getElementById("btn");
+            var light = document.getElementById("light");
+            var lampOff = document.getElementById("lampOff");
+            var lampOn = document.getElementById("lampOn");
+
+            function toggleBtn() {
+                btn.classList.toggle("active")
+                light.classList.toggle("on")
+                lampOff.classList.toggle("off")
+                lampOn.classList.toggle("on")
+            }
+        </script>
+    </body>
+</html>
